@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+dist/
+engine_python.egg-info/
+.python-version
+trivy.json
+uv.lock
