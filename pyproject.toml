@@ -1,10 +1,16 @@
 [project]
-name = "engine-python"
+name = "engine_python"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "fastapi>=0.119.0",
+    "fastapi[standard]>=0.119.0",
     "uvicorn>=0.37.0",
 ]
+
+[tool.setuptools]
+py-modules = ["engine_python"]
+
+[project.scripts]
+engine-python = "engine_python:main"
