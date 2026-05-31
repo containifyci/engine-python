@@ -1,0 +1,16 @@
+version: 1.0.0
+
+_config: merge
+
+approve:
+  include:
+    branches:
+      dependabot_python:
+        prefix: "dependabot/pip"
+
+merge:
+  include:
+    branches:
+      dependabot_python:
+        prefix: "dependabot/pip"
+  method: squash
